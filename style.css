@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.app {
+    border-radius: 30px;
+    border: 3px solid silver;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    padding: 0px;
+}
+
+.input input {
+    height: 2.3rem;
+    /* border-style: none; */
+    border-radius: 8px;
+    padding: 0rem 0px 0rem 8px;
+}
+
+.input .btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input .btns svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+} 
+
+.input button {
+    padding: 4px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.output {
+    border: 1px solid #00000036;
+    height: 90%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    padding: 10px 5px 0px;
+    border-bottom: 0px;
+    overflow: scroll;
+    gap: 0.5rem;
+}
+
+.output::-webkit-scrollbar {
+    width: 0;
+}
+
+.output span {
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.output span button {
+    padding: 4px 18px;
+    background-color: red;
+    border-radius: 2rem;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
